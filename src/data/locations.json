@@ -1,0 +1,110 @@
+[
+    {
+        "name": "GWARbar",
+        "street": "217 W Clay St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23220",
+        "url": "www.gwarbar.com",
+        "pos": {"lat": 37.5488,"lng": -77.4430}
+    },
+    {
+        "name": "The Circuit Arcade Bar",
+        "street": "3121 W Leigh St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23230",
+        "url": "https://www.thecircuitarcadebar.com/",
+        "pos": {"lat": 37.5675,"lng": -77.4718}
+    },
+    {
+        "name": "Strange Matter",
+        "street": "929 W Grace St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23220",
+        "url": "https://www.facebook.com/StrangeMatterRVA/",
+        "pos": {"lat": 37.5505,"lng": -77.4529}
+    },
+    {
+        "name": "Capital Ale House Richmond",
+        "street": "623 E Main St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23219",
+        "url": "http://www.capitalalehouse.com/",
+        "pos": {"lat": 37.5394,"lng": -77.4386}
+    },
+    {
+        "name": "Havana 59 Downtown",
+        "street": "16 N 17th St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23219",
+        "url": "http://havana59.net/",
+        "pos": {"lat": 37.5343,"lng": -77.4284}
+    },
+    {
+        "name": "Penny Lane Pub",
+        "street": "421 E Franklin St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23219",
+        "url": "http://www.pennylanepub.com/",
+        "pos": {"lat": 37.5412,"lng": -77.4393}
+    },
+    {
+        "name": "Rosie Connolly's Pub Restaurant",
+        "street": "1548 E Main St A",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23219",
+        "url": "http://www.rosieconnollys.com/",
+        "pos": {"lat": 37.5340,"lng": -77.4285}
+    },
+    {
+        "name": "Poe's Pub",
+        "street": "2706 E Main St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23223",
+        "url": "https://www.facebook.com/poespub1",
+        "pos": {"lat": 37.527807,"lng": -77.419209}
+    },
+    {
+        "name": "The Camel",
+        "street": "1621 W Broad St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23220",
+        "url": "https://www.thecamel.org/",
+        "pos": {"lat": 37.5544,"lng": -77.4572}
+    },
+    {
+        "name": "Cary St. Cafe",
+        "street": "2631 W Cary St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23220",
+        "url": "https://carystcafe.com/",
+        "pos": {"lat": 37.5509,"lng": -77.4751}
+    },
+    {
+        "name": "Mekong Restaurant",
+        "street": "6004 W Broad St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23230",
+        "url": "http://mekongisforbeerlovers.com/",
+        "pos": {"lat": 37.5934,"lng": -77.5074}
+    },
+    {
+        "name": "Patrick Henry's Pub & Grille",
+        "street": "2300 E Broad St",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23223",
+        "url": "http://www.thephpub.com/",
+        "pos": {"lat": 37.5328,"lng": -77.4203}
+    }
+]
