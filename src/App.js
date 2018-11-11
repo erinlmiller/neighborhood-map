@@ -31,17 +31,30 @@ class App extends Component {
     }
   };
 
+  toggleDrawer = () =>{
+    this.setState({
+      open: !this.state.open
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <div>
+          <button onClick={this.toggleDrawer} style={this.styles.menuButton}>
+            <i className="fa fa-bars"></i>
+          </button>
           <h1>Richmond, VA Pubs and Bars</h1>
         </div>
         <MapDisplay 
-        lat={this.state.lat}
-        lon={this.state.lon}
-        zoom={this.state.zoom}
-        locations={this.state.all}/>
+          lat={this.state.lat}
+          lon={this.state.lon}
+          zoom={this.state.zoom}
+          locations={this.state.all}/>
+        <ListDrawer
+          locations={this.state.all}
+          open={this.state.open}
+          toggleDrawer={this.toggleDrawer}/>
       </div>
     );
   }
