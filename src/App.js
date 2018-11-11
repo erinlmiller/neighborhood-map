@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     lat: 37.5407,
     lon: -77.4360,
-    zoom: 13,
+    zoom: 12,
     all: locations,
     filtered: null,
     open: false
@@ -64,7 +64,7 @@ class App extends Component {
           <button onClick={this.toggleDrawer} style={this.styles.menuButton}>
             <i className="fa fa-bars"></i>
           </button>
-          <h1>Richmond, VA Pubs and Bars</h1>
+          <h1>Thirsty? Grab a drink in Richmond, VA!</h1>
         </div>
         <MapDisplay 
           lat={this.state.lat}
