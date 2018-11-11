@@ -18,6 +18,29 @@ class MapDisplay extends Component {
 
     componentDidMount = () => {}
 
+    componentWillReceiveProps = (props) => {
+        this.setState({firstDrop: false});
+
+        if (this.state.markers.length !== props.locations.length) {
+            this.closeInfoWindow();
+            this.updateMarkers(props.locations);
+            this.setState({activeMarker: null});
+
+            return;
+        }
+
+        if (!props.selectedIndex || (this.state.activeMarker && 
+            (this.state.markers[props.selectedIndex] !== this.state.activeMarker))) {
+            this.closeInfoWindow();
+        }
+
+        if (props.selectedIndex === null || typeof(props.selectedIndex) === "undefined") {
+            return;
+        };
+
+        this.onMarkerClick(this.state.markerProps[props.selectedIndex], this.state.markers[props.selectedIndex]);
+    }
+
     mapReady = (props, map) => {
         this.setState({map});
         this.updateMarkers(this.props.locations);
