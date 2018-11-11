@@ -31,8 +31,7 @@ class MapDisplay extends Component {
             return;
         }
 
-        if (!props.selectedIndex || (this.state.activeMarker && 
-            (this.state.markers[props.selectedIndex] !== this.state.activeMarker))) {
+        if (!props.selectedIndex || (this.state.activeMarker && (this.state.markers[props.selectedIndex] !== this.state.activeMarker))) {
             this.closeInfoWindow();
         }
 
@@ -49,18 +48,12 @@ class MapDisplay extends Component {
     }
 
     closeInfoWindow = () => {
-        this.state.activeMarker && this
-            .state
-            .activeMarker
-            .setAnimation(null);
+        this.state.activeMarker && this.state.activeMarker.setAnimation(null);
         this.setState({showingInfoWindow: false, activeMarker: null, activeMarkerProps: null});
     }
 
     getBusinessInfo = (props, data) => {
-        return data
-            .response
-            .venues
-            .filter(item => item.name.includes(props.name) || props.name.includes(item.name));
+        return data.response.venues.filter(item => item.name.includes(props.name) || props.name.includes(item.name));
     }
 
     onMarkerClick = (props, marker, e) => {
@@ -107,10 +100,7 @@ class MapDisplay extends Component {
     updateMarkers = (locations) => {
         if (!locations) 
             return;
-        this
-            .state
-            .markers
-            .forEach(marker => marker.setMap(null));
+        this.state.markers.forEach(marker => marker.setMap(null));
 
         let markerProps = [];
         let markers = locations.map((location, index) => {
@@ -124,11 +114,7 @@ class MapDisplay extends Component {
             markerProps.push(mProps);
 
             let animation = this.props.google.maps.Animation.DROP;
-            let marker = new this
-                .props
-                .google
-                .maps
-                .Marker({position: location.pos, map: this.state.map, animation});
+            let marker = new this.props.google.maps.Marker({position: location.pos, map: this.state.map, animation});
             marker.addListener('click', () => {
                 this.onMarkerClick(mProps, marker, null);
             });
