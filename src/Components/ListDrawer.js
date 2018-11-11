@@ -37,6 +37,7 @@ class ListDrawer extends Component {
 
     updateQuery = (newQuery) => {
         this.setState({ query: newQuery });
+        this.props.filterLocations(newQuery);
     }
 
     render = () => {
